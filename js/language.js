@@ -9,25 +9,25 @@ var arrLang = {
         'info': 'More Info',
         'Specifications': 'Specifications',
         'power': 'His Power Is Over 9000!',
-        'daedalus': 'Delegate with Daedalus wallet.',
+        'Radix': 'Delegate with Radix wallet.',
         'download': 'Download',
-        'downloadD': 'Download Daedalus',
-        'blockchain': 'Cardano Blockchain Explorer.',
+        'downloadD': 'Download Radix',
+        'blockchain': 'Radix Blockchain Explorer.',
         'explorer': 'Explorer',
         'specifications': 'SPECIFICATIONS (GENKI)',
         'rewardG': 'Rewards With GenkiPool',
         'guideD': 'DELEGATION GUIDE',
-        'search': 'Search GENKIPOOL',
-        'selectG': 'Select GENKIPOOL',
+        'search': 'CLICK STAKE UNSTAKE',
+        'selectG': 'ENTER VALIDATE ID',
         'selectW': 'Select Wallet',
         'checkG': 'Check GENKIPOOL',
         'enterP': 'Enter Password',
         'serviceD': 'SERVICE',
-        'textService': 'The network infrastructure is made up of 7 servers, 4 relay servers, 2 pool nodes and 1 server for monitoring. The 4 relay nodes are in different locations for better redundancy, communication and speed in the propagation of blocks in the blockchain. 2 nodes are located in Nuremberg, 1 node in Falkenstein and 1 node in Tuusula. All nodes are monitored 24 hours a day with Grafana, Prometheus, Loki and with sending of alarms by Telegram. The second pool node is off and is only used when it is necessary to make an update in the main pool node, in this way the pool is working 24 hours and ready to sign blocks.',
+        'textService': 'The network infrastructure is made up of three servers, a first server is located in Nuremberg and acts as a validator, the second server is located in Tuusula and acts as a full node that in turn allows a failover in case the validator node All nodes are monitored (third server) 24 hours a day with Grafana, Prometheus, Loki and with sending of alarms by Telegram. Backup is done eventually and before each update.',
         'communityPa': 'Join the community and help to publicize GENKIPOOL by sharing your own images and advertising GENKIPOOL on social networks, ',
         'communityPa2': 'the best images will be published on the web and on social networks, together we will be stronger and we will get more rewards.',
         'contactMe': 'Contact Me',
-        'perfil': 'Hi, my name is Luis, I have 7 years of experience as a network administrator and Network Security Assessment, I also have advanced knowledge in Linux and I know how to program in various languages, especially in bash and python.'
+        'perfil': 'Hi, my name is Luis, I have 8 years of experience as a network administrator and Network Security Assessment, I also have advanced knowledge in Linux and I know how to program in various languages, especially in bash and python.'
       },
       'es': {
         'dataGenkiPool': 'Datos GenkiPool',
@@ -39,25 +39,25 @@ var arrLang = {
         'info': 'Más Información',
         'Specifications': 'Especificaciones',
         'power': 'Su poder es más de 9000!',
-        'daedalus': 'Delega con Daedalus.',
+        'Radix': 'Delega con Radix.',
         'download': 'Descargar',
-        'downloadD': 'Descargar Daedalus',
-        'blockchain': 'Explorar Blockchain Cardano.',
+        'downloadD': 'Descargar Radix',
+        'blockchain': 'Explorar Blockchain Radix.',
         'explorer': 'Explorar',
         'specifications': 'ESPECIFICACIONES (GENKI)',  
         'rewardG': 'Recompensas Con GenkiPool',
         'guideD': 'COMO DELEGAR',
-        'search': 'Buscar GENKIPOOL',
-        'selectG': 'Seleccionar GENKIPOOL',
+        'search': 'CLICK STAKE UNSTAKE',
+        'selectG': 'INTRODUCE VALIDATE ID',
         'selectW': 'Seleccionar Billetera',
         'checkG': 'Verificar GENKIPOOL',
         'enterP': 'Introducir Password',
         'serviceD': 'SERVICIO',
-        'textService': 'La infraestructura de red esta formada por 7 servidores, 4 Servidores relays, 2 nodos pool y 1 servidor para monitorización. Los 4 nodos relays se encuentran en distintas localizaciones para una mejor redundancia, comunicación y rapidez en la propagación de bloques en la blockchain. 2 nodos se encuentran ubicados en Nuremberg, 1 nodo en Falkenstein y 1 nodo en Tuusula. Todos los nodos son monitorizados 24 horas con Grafana, Prometheus, Loki y con envío de alarmas por Telegram. El segundo nodo pool se encuentra apagado y solo se utiliza cuando es necesario hacer una actualización en el nodo pool principal, de esta manera el pool esta 24 horas funcionado y listo para firmar bloques.',
+        'textService': 'La infraestructura de red esta formada por tres servidores, un primer servidor se encuentra en Nuremberg y actua como validador, el segundo servidor se encuentra en Tuusula y actua como un nodo completo que a su vez permite realizar un failover en caso de que el nodo validador falle.Todos los nodos son monitoreados (tercer servidor) las 24 horas del día con Grafana, Prometheus, Loki y con envío de alarmas por Telegram. Se realiza backup eventualmente y antes de cada actualización.',
         'communityPa': 'Únete a la comunidad y ayuda a dar a conocer a GENKIPOOL compartiendo tus propias imágenes y publicitando GENKIPOOL en las redes sociales, ',
         'communityPa2': 'las mejores imágenes serán publicadas en la web y en las redes sociales, juntos seremos más fuertes y obtendremos más recompensas.',
         'contactMe': 'Contactame',
-        'perfil': 'Hola, mi nombre es Luis, tengo 7 años de experiencia como administrador de redes y como auditor de seguridad de redes informaticas, también tengo conocimientos avanzados en Linux y sé programar en varios lenguajes, especialmente en bash y python.'
+        'perfil': 'Hola, mi nombre es Luis, tengo 8 años de experiencia como administrador de redes y como auditor de seguridad de redes informaticas, también tengo conocimientos avanzados en Linux y sé programar en varios lenguajes, especialmente en bash y python.'
         
       }
 };
@@ -96,18 +96,18 @@ $(function() {
 		var TextStrong = document.createTextNode("GENKIPOOL ");
 		var TextPa2 = document.createTextNode("to help Goku beat the ");
 		var TextStrong2 = document.createTextNode("banking system.");	
-		var TextPaR = document.createTextNode("Earn staking rewards in ADA crypto currency by downloading the Daedalus Mainnet or Yoroi staking wallet and choosing ");
+		var TextPaR = document.createTextNode("Earn rewards in the XRD cryptocurrency by downloading the Radix wallet and choosing ");
 		var TextPaR2 = document.createTextNode("GenkiPool ");
-		var TextPaR3 = document.createTextNode("as your staking pool.");
+		var TextPaR3 = document.createTextNode("and 4 more validators that do not exceed 5% stake as your staking nodes.");
 
 	} else {
 		var TextPa = document.createTextNode("Delega en ");
 		var TextStrong = document.createTextNode("GENKIPOOL ");
 		var TextPa2 = document.createTextNode("para ayudar a Goku a vencer al ");
 		var TextStrong2 = document.createTextNode("sistema bancario.");
-		var TextPaR = document.createTextNode("Gane recompensas de apuesta en criptomoneda ADA descargando la billetera Daedalus o Yoroi y eligiendo ");
+		var TextPaR = document.createTextNode("Gane recompensas en la criptomoneda XRD descargando la billetera Radix y eligiendo a  ");
 		var TextPaR2 = document.createTextNode("GenkiPool ");
-		var TextPaR3 = document.createTextNode("como su grupo de particiapación.");
+		var TextPaR3 = document.createTextNode("y a otros 4 validadores más que no superen el 5% de stake como sus nodos de staking.");
 				
 	}
 		
